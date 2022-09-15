@@ -4,23 +4,17 @@ public class DigitsSum {
     public void printDigitsSum(int t){
 
         int s=0;
-        int c,a,b;
+        int b;
         
         b= (t < 0) ? -1*t: t;
         String str = "" + b;
-
 
         for (int i = 0; i < str.length(); i++) {
             s+= b%10;
             b = b/10;
         }
-        
         System.out.println(s);
     }
 
 
-    public static void main(String[] args){
-        DigitsSum m = new DigitsSum();
-        m.printDigitsSum(2234);
-    }
 }

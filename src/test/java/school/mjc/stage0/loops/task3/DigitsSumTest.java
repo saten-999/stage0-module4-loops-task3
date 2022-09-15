@@ -41,7 +41,7 @@ class DigitsSumTest extends BaseIOTest {
         List<String> strings = Files.readAllLines(path);
 
         List<String> result = strings.stream()
-                .filter(line -> line.contains("index")  || line.contains("->"))
+                .filter(line -> line.contains("index") || line.contains("]") || line.contains("->"))
                 .collect(Collectors.toList());
 
         assertEquals(0, result.size());
