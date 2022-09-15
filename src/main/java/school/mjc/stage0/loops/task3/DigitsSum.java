@@ -8,26 +8,13 @@ public class DigitsSum {
         
         b= (t < 0) ? -1*t: t;
         String str = "" + b;
-        while (b>0) {
-            a = b%10;
-            s+=a;
+
+
+        for (int i = 0; i < str.length(); i++) {
+            s+= b%10;
             b = b/10;
         }
-
-        // String[] arrOfStr =  String.valueOf(b).split("");
-
-        // for (String k: arrOfStr){
-        //     c = Integer.parseInt(k);
-        //     s+=c;
-
-        // }
-        // int i=str.length();
-        // while ( i >0) {
-        //     s+= b%10;
-        //     b = b/10;
-        //     i--;
-        // }
-
+        
         System.out.println(s);
     }
 
